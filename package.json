@@ -1,0 +1,19 @@
+{
+  "name": "se-project-home-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tech4gt/se-project-home-automation.git"
+  },
+  "author": "Varun Gupta <varun.gupta1798@gmail.com> (http://codingblocks.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tech4gt/se-project-home-automation/issues"
+  },
+  "homepage": "https://github.com/tech4gt/se-project-home-automation#readme"
+}
