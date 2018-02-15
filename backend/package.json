@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/tech4gt/se-project-home-automation/issues"
   },
-  "homepage": "https://github.com/tech4gt/se-project-home-automation#readme"
+  "homepage": "https://github.com/tech4gt/se-project-home-automation#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "johnny-five": "^0.13.0"
+  }
 }
