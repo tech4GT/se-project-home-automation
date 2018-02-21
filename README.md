@@ -5,8 +5,8 @@ Api endpoints for the automation api
 ```
 [
     {
+        'id': <Integer>
         'name': <String>,
-        'description': <String>,
         'status': <boolean>
     },
 
@@ -18,25 +18,25 @@ Api endpoints for the automation api
 Response body
 
 
-*GET*  `/one` : Info about one device
+*GET*  `/1` : Info about one device
 
 Response Body:
 ```
 {   
+    'id': <Integer>
     'name': <string>,
-    'description': <string>,
-    'value': <boolean>
+    'status': <boolean>
 }
 
 ```
 
-*POST*  `/one` : Turn device on or off
+*POST*  `/1` : Turn device on or off
 
 
 Request body :
 ```
 {
-    'value': <boolean> //to represent on or off
+    'status': <boolean> //to represent on or off
     'echo': <boolean> //return the new value
 }
 
@@ -53,4 +53,4 @@ Response Body :
 ```
 
 **Same Endpoints for device 2** 
- `/two`
+ `/2`
