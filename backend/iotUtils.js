@@ -5,22 +5,42 @@ var board = new five.Board({
 });
 board.on('ready',function(){
     led = new five.Led('P1-13');
+    // make fan
     led.on();
 });
+var statuses =  [false, false]
 
 module.exports = {
     fetchAllStatus: function () { 
         return new Promise((resolve,reject)=>{
-            led.off()
-            resolve([false,false])
+            resolve(statuses)
         })
     },
     fetchStatusbyId: function (id) {
         return new Promise((resolve,reject)=>{
-            resolve(false)
+            resolve(statuses[id-1])
         })
     },
-    setStatusbyId: function (id,status) { 
+    setStatusbyId: function (id,status) {
+        if(status){
+            if(id ==1){
+                led.on()
+                statuses[0] = true
+            }
+            else{
+                
+            }    
+        }
+        else{
+            if(id == 1){
+                led.off()
+                statuses[0] = false
+            }
+            else{
+                
+            }
+            
+        }
         return new Promise((resolve,reject)=>{
             resolve(status)
         })
