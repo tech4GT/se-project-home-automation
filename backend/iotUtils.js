@@ -4,8 +4,8 @@ var board = new five.Board({
     io : new ras()
 });
 board.on('ready',function(){
-    led = new five.Led('P1-13');
-    // make fan
+    led = new five.Led('GPIO18');
+    fan = new five.Led('P1-13');
     led.on();
 });
 var statuses =  [false, false]
@@ -28,7 +28,8 @@ module.exports = {
                 statuses[0] = true
             }
             else{
-                
+                fan.on()
+                statuses[0] = true
             }    
         }
         else{
@@ -37,7 +38,8 @@ module.exports = {
                 statuses[0] = false
             }
             else{
-                
+                fan.off()
+                statuses[1] = false
             }
             
         }
