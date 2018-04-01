@@ -2,9 +2,11 @@ const express = require('express')
 const bp = require('body-parser')
 const app = express()
 const iot = require('./iotUtils')
+const cors = require('cors')
 
 app.use(bp.json())
 app.use(bp.urlencoded({extended: true}))
+app.use(cors())
 
 app.get('/all', function (req, res) {
     iot.fetchAllStatus().then((arr)=>{
@@ -62,6 +64,6 @@ app.post('/2', function (req, res) {
 })
 
 
-app.listen(8080, function () {
-    console.log("started on port 8080")
+app.listen(5000, function () {
+    console.log("started on port 5000")
 })

@@ -35,7 +35,7 @@ module.exports = {
         else{
             if(id == 1){
                 led.off()
-                statuses[0] = false
+                statuses[1] = false
             }
             else{
                 fan.off()
