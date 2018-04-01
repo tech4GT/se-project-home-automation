@@ -29,13 +29,13 @@ module.exports = {
             }
             else{
                 fan.on()
-                statuses[0] = true
+                statuses[1] = true
             }    
         }
         else{
             if(id == 1){
                 led.off()
-                statuses[1] = false
+                statuses[0] = false
             }
             else{
                 fan.off()
