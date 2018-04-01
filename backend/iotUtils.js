@@ -4,7 +4,7 @@ var board = new five.Board({
     io : new ras()
 });
 board.on('ready',function(){
-    led = new five.Led('GPIO18');
+    led = new five.Led('GPIO7');
     fan = new five.Led('P1-13');
     led.on();
 });
