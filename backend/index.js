@@ -64,6 +64,8 @@ app.post('/2', function (req, res) {
 })
 
 
+app.use('/',express.static(__dirname + '../frontend/'))
+
 app.listen(5000, function () {
     console.log("started on port 5000")
 })
