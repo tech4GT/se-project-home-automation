@@ -63,11 +63,11 @@ app.post('/2', function (req, res) {
     })
 })
 
+console.log(__dirname)
+app.use('/',express.static(__dirname + '/../frontend/'))
 
-app.use('/',express.static(__dirname + '../frontend/'))
-
-app.listen(5000, function () {
-    console.log("started on port 5000")
+app.listen(8080, function () {
+    console.log("started on port 8080")
 })
 var os = require('os');
 var ifaces = os.networkInterfaces();

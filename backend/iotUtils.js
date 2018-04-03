@@ -6,7 +6,6 @@ var board = new five.Board({
 board.on('ready',function(){
     led = new five.Led('GPIO7');
     fan = new five.Led('P1-13');
-    led.on();
 });
 var statuses =  [false, false]
 
