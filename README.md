@@ -1,3 +1,5 @@
+Home automation solution in javascript using Johnny V.
+
 Api endpoints for the automation api
 
 
